@@ -62,6 +62,8 @@ def main():
         API_HEADERS = {
             "Authorization": "Bearer " + cf_api_key,
             "Content-Type": "application/json",
+            'X-Auth-Key': cf_api_key,
+            'X-Auth-Email': cf_email
         }
         if not cf_zone:
             # Get zone informations
